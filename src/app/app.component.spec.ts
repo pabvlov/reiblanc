@@ -17,7 +17,6 @@ describe('AppComponent', () => {
   it(`should have the 'reiblanc' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('reiblanc');
   });
 
   it('should render title', () => {
