@@ -32,9 +32,9 @@
 <section id="quienes-somos">
   <div class="somos row" *ngIf="screenWidth < 991"> <!-- PARA MOBILE -->
     <div [class]="screenWidth < 991 ? 'content': 'container content'">
-      <h2>SOMOS</h2>
-      <h1>REIBLANC</h1>
-      <p>Somos una empresa con productos y servicios enfocados al reflotamiento de embarcaciones</p>
+      <h2 class="text-center mx-auto">SOMOS</h2>
+      <h1 class="text-center mx-auto">REIBLANC</h1>
+      <p class="text-center">Somos una empresa con productos y servicios enfocados al reflotamiento de embarcaciones</p>
     </div>
     <!-- Imágenes flotantes -->
      <div class="barquitos">
@@ -233,76 +233,137 @@
 
 <section id="historia">
   <div class="container">
-    <h2 class="title">Desde 1984</h2>
+    <h2 class="title text-center">Desde 1984</h2>
     <div class="resumen row">
-      <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
+      <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12 center-vertical">
         <div class="story-time">
           <p>Fundada en 1985, nuestra empresa ha consolidado una sólida trayectoria en el mercado, destacándose por su innovación y compromiso con la excelencia.</p>
           <p>En 1989, diversificamos nuestros productos con la fabricación de flotadores para helicópteros en Torquemada. Durante la década de los 90, llevamos a cabo el mantenimiento de más de 3.000 metros lineales de barreras de contención de hidrocarburos a lo largo del país, en colaboración con las capitanías de puerto de la Armada de Chile.</p>
           <p>Esta experiencia nos permitió recopilar valiosa información de diseño y funcionamiento, lo que marcó un hito al incursionar en la fabricación de barreras de contención. Nos convertimos en pioneros a nivel nacional, reafirmando nuestro liderazgo y compromiso con la calidad.</p>
-          
-          <div class="trusted-us">
-            <h2>Han confiado en nosotros</h2><br><br>
-            <div class="logos">
-              <div class="row center">
-                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 logo-container">
-                  <img src="../assets/images/empresas/logo_armada_png.png" alt="logo de empresa" class="img-fluid trusted">
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 logo-container">
-                  <img src="../assets/images/empresas/logo_puerto_san_antonio.png" alt="logo de empresa" class="img-fluid trusted">
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 logo-container">
-                  <img src="../assets/images/empresas/puerto-ventanas-logo.jpg" alt="logo de empresa" class="img-fluid trusted">
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 logo-container">
-                  <img src="../assets/images/empresas/logo_puertopanul.jpg" alt="logo de empresa" class="img-fluid trusted">
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 logo-container">
-                  <img src="../assets/images/empresas/logo_enap.gif" alt="logo de empresa" class="img-fluid trusted">
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 logo-container">
-                  <img src="../assets/images/empresas/humboldt_logo.png" alt="logo de empresa" class="img-fluid trusted">
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 logo-container">
-                  <img src="../assets/images/empresas/logo-agunza.png" alt="logo de empresa" class="img-fluid trusted">
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 logo-container">
-                  <img src="../assets/images/empresas/fenasa_logo.png" alt="logo de empresa" class="img-fluid trusted">
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 logo-container">
-                  <img src="../assets/images/empresas/Belfi_logo.png" alt="logo de empresa" class="img-fluid trusted">
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 logo-container">
-                  <img src="../assets/images/empresas/Logo-Oxiquim.jpg" alt="logo de empresa" class="img-fluid trusted">
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 logo-container bg-dark">
-                  <img src="../assets/images/empresas/oxxean_logo.png" alt="logo de empresa" class="img-fluid trusted">
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 logo-container">
-                  <img src="../assets/images/empresas/servisub.png" alt="logo de empresa" class="img-fluid trusted">
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 logo-container">
-                  <img src="../assets/images/empresas/ecosub.png" alt="logo de empresa" class="img-fluid trusted">
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 logo-container">
-                  <img src="../assets/images/empresas/chile_service.jpg" alt="logo de empresa" class="img-fluid trusted">
-                </div>
-              </div>
-              <br><br>
-              
-            </div>
-          </div>
         </div>
       </div>
-      <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+      <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 center mt-5">
         <img src="../assets/images/foto_historica-1.png" alt="Foto de noticia en el diario Ciudad del Sol" class="img-fluid">
       </div>
     </div>
   </div>
 </section>
 
-<section id="han-confiado">
-  
+<section id="han-confiado" class="container">
+  <div class="trusted-us">
+    <h2 class="text-center">Han confiado en nosotros</h2><br><br>
+    <div class="logos mt-3">
+      <div class="row center">
+        <br><br>
+        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 logo-container">
+          <img src="../assets/images/empresas/logo_armada_png.png" alt="logo de empresa" class="img-fluid trusted">
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 logo-container">
+          <img src="../assets/images/empresas/logo_puerto_san_antonio.png" alt="logo de empresa" class="img-fluid trusted">
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 logo-container">
+          <img src="../assets/images/empresas/puerto-ventanas-logo.jpg" alt="logo de empresa" class="img-fluid trusted">
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 logo-container">
+          <img src="../assets/images/empresas/logo_puertopanul.jpg" alt="logo de empresa" class="img-fluid trusted">
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 logo-container">
+          <img src="../assets/images/empresas/logo_enap.gif" alt="logo de empresa" class="img-fluid trusted">
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 logo-container">
+          <img src="../assets/images/empresas/humboldt_logo.png" alt="logo de empresa" class="img-fluid trusted">
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 logo-container">
+          <img src="../assets/images/empresas/logo-agunza.png" alt="logo de empresa" class="img-fluid trusted">
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 logo-container">
+          <img src="../assets/images/empresas/fenasa_logo.png" alt="logo de empresa" class="img-fluid trusted">
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 logo-container">
+          <img src="../assets/images/empresas/Belfi_logo.png" alt="logo de empresa" class="img-fluid trusted">
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 logo-container">
+          <img src="../assets/images/empresas/Logo-Oxiquim.jpg" alt="logo de empresa" class="img-fluid trusted">
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 logo-container bg-dark">
+          <img src="../assets/images/empresas/oxxean_logo.png" alt="logo de empresa" class="img-fluid trusted">
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 logo-container">
+          <img src="../assets/images/empresas/servisub.png" alt="logo de empresa" class="img-fluid trusted">
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 logo-container">
+          <img src="../assets/images/empresas/ecosub.png" alt="logo de empresa" class="img-fluid trusted">
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 logo-container">
+          <img src="../assets/images/empresas/chile_service.jpg" alt="logo de empresa" class="img-fluid trusted">
+        </div>
+      </div>
+      <br><br>
+      
+    </div>
+  </div>
 </section>
 
-<section></section>
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-body-tertiary text-muted">
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <div class="me-5 d-none d-lg-block">
+      <span>Nuestras redes sociales:</span>
+    </div>
+    <div>
+      <a href="https://www.facebook.com/funeralescubillosvina/?locale=es_LA" class="me-4 text-reset" target="_blank">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://www.instagram.com/funeralescubillosvina/" class="me-4 text-reset" target="_blank">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+  </section>
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <div class="row mt-3">
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <h3 class="text-uppercase mb-4">
+            REIBLANC
+          </h3>
+          <p>
+              {{ anios }} años dedicados a un servicio de Excelencia y Calidad.
+          </p>
+        </div>
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <h3 class="text-uppercase fw-bold mb-4">
+            Servicios
+          </h3>
+          <p>
+            <a class="text-reset">Reflotamiento de Embarcaciones</a>
+          </p>
+          <p>
+            <a class="text-reset">Fabricación de Productos</a>
+          </p>
+          <p>
+            <a class="text-reset">Mantención de Productos</a>
+          </p>
+        </div>
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <h3 class="text-uppercase fw-bold mb-4">Contacto</h3>
+          <p><i class="fa-solid fa-location-dot"></i> Los Retoños, #352, 5to sector, Belloto Sur, Quilpué, CHILE</p>
+          <p>
+            <i class="fa-regular fa-envelope"></i> reiblanc.com
+          </p>
+          <p><i class="fa-solid fa-phone"></i> +56 9 7898 2322</p>
+          <p><i class="fa-solid fa-phone"></i> +56 9 8339 5093</p>
+          <p><i class="fa-solid fa-phone"></i> +56 9 6592 7679</p>
+        </div>
+      </div>
+    </div>
+    <br><br>
+  </section>
+  <div class="text-center pt-4 bg-dark text-white">
+    © 2024 Copyright:
+    <a class="text-white fw-bold" href="https://reiblanc.com/">reiblanc.com</a>
+  </div>
+  <div class="text-center pb-4 bg-dark text-white">
+      Por:
+      <a class="text-white fw-bold" href="https://pavlo.cl/" target="_blank">&#64;pabvlov</a>
+    </div>
+</footer>
